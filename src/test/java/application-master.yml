@@ -1,0 +1,18 @@
+security:   
+  basic:  
+    enabled: true #eureka need to auth
+  user:  
+    name: eureka #eureka user
+    password: chunze1qaz2wsx #eureka password  
+      
+server:  
+  port: 8761  
+    
+eureka:  
+  instance:   
+   hostname: eurekamaster.chunzeacademy.com
+  client:  
+    register-with-eureka: false 
+    fetch-registry: false  
+    service-url:  
+      defaultZone: http://${security.user.name}:${security.user.password}@eurekasalve.chunzeacademy.com:8761/eureka  

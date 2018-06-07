@@ -1,0 +1,5 @@
+git-server:172.18.10.231
+eureka-server:172.18.10.232 172.18.10.233 172.18.10.234
+rabbitMq:172.18.10.12  port:5672  
+rabbitMq console:   http://172.18.10.102:15672/#/   帐号和密码抖擞rabbitmq
+curl  -d "username=yunyingzhicheng&password=yunyingzhicheng&pwd=yunyingzhicheng&secret=true"  http://172.16.15.252/webAuth/
